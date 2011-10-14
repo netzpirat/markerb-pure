@@ -3,9 +3,9 @@ $:.push File.expand_path("../lib", __FILE__)
 require "markerb/version"
 
 Gem::Specification.new do |s|
-  s.name        = "markerb"
+  s.name        = "markerb-pure"
   s.version     = Markerb::VERSION.dup
-  s.platform    = Gem::Platform::RUBY  
+  s.platform    = Gem::Platform::RUBY
   s.summary     = "Multipart templates made easy with Markdown + ERb"
   s.email       = "contact@plataformatec.com.br"
   s.homepage    = "http://github.com/plataformatec/markerb"
@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency "redcarpet"
+  s.add_dependency "kramdown"
 end
